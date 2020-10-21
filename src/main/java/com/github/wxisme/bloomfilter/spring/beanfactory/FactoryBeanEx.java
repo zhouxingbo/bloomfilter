@@ -2,7 +2,7 @@ package com.github.wxisme.bloomfilter.spring.beanfactory;
 
 /**
  * desc:
- *
+ * 工厂模式
  * @author: bobo
  * createDate: 20-10-19
  * Spring通过反射机制利用<bean>的class属性指定实现类实例化Bean，

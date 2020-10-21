@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.context.support.XmlWebApplicationContext;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletRequestWrapper;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
@@ -27,7 +28,7 @@ public class MainService {
 	private static ApplicationContext applicationContext;
 
 	@Autowired
-	private HttpServletRequest request;
+	private HttpServletRequestWrapper request;
 
 	@Autowired
 	private HttpServletResponse httpServletResponse;

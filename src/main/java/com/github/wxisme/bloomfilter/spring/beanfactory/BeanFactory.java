@@ -1,8 +1,15 @@
 package com.github.wxisme.bloomfilter.spring.beanfactory;
 
+import org.springframework.beans.factory.xml.XmlBeanFactory;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.core.io.ClassPathResource;
+import org.springframework.core.io.FileSystemResource;
+import org.springframework.core.io.Resource;
+
 /**
  * desc:
- *
+ * 简单工厂模式
  * @author: bobo
  * createDate: 20-10-19
  * 1. BeanFactory是基础，BeanFactory和它的子接口定义的API满足了spring环境中对bean管理和配置的需求；
@@ -16,4 +23,11 @@ package com.github.wxisme.bloomfilter.spring.beanfactory;
  */
 
 public class BeanFactory {
+
+	public static void main(String[] args) {
+		ApplicationContext context = new ClassPathXmlApplicationContext(new String[] {"applicationContext.xml", "applicationContext-part2.xml"});
+		BeanFactory factory = (BeanFactory) context;
+	}
+
+
 }
