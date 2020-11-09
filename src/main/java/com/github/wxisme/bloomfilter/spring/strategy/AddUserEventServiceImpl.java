@@ -6,7 +6,6 @@ import org.springframework.stereotype.Service;
 public class AddUserEventServiceImpl implements IBaseEventService {
     @Override
     public boolean dealEvent(String eventObject) {
-        // TODO 业务处理逻辑
         return false;
     }
 
