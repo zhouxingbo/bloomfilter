@@ -14,9 +14,9 @@ public class UserController {
 
 	@Autowired
 	private UserService userService;
-​
+
 	@GetMapping("wrong1")
-	public int wrong1(@RequestParam("name") String name){
+	public int wrong1(@RequestParam("name") String name) {
 		return userService.createUserWrong1(name);
 	}
 
